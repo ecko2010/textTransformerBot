@@ -103,7 +103,6 @@ if __name__ == '__main__':
         fallbacks=[
             CallbackQueryHandler(pattern='back', callback=back_callback)
         ],
-        per_message=True
     ))
     dp.add_handler(ConversationHandler(
         entry_points=[
@@ -115,7 +114,6 @@ if __name__ == '__main__':
         fallbacks=[
             CallbackQueryHandler(pattern='back', callback=back_callback)
         ],
-        per_message=True
     ))
 
     updater.start_polling()
