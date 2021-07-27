@@ -92,7 +92,6 @@ if __name__ == '__main__':
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler('start', start))
-    dp.add_handler(CallbackQueryHandler(pattern='back', callback=back_callback))
     dp.add_handler(ConversationHandler(
         entry_points=[
             CallbackQueryHandler(pattern='to_upper', callback=to_upper_callback)
